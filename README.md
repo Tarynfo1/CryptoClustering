@@ -28,12 +28,19 @@
 ***
 ## Instructions
 1. Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file and create a DataFrame.
-    Example DataFrame:
-    <img width="366" alt="bar_chart" src="">
+    __Raw DataFrame:__
 
- 2. Use the elbow method to find the best value for k. __What is the value for k?__ 
+
+    <img width="366" alt="dataframe" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/crypto_dataframe.png">
+
+    __Plotted DataFrame__
+
+
+    <img width="366" alt="dataframe2" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/plotted_dataframe.png">
+
+ 2. Use the elbow method to find the best value for k. __What is the value for k?__ The best value for k is 4.
     
-    <img width="366" alt="bar_chart" src="">
+    <img width="366" alt="elbow data" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/elbow_curve.png">
 
  3. Cluster Cryptocurrencies with K-means Using the Original Scaled Data
     
