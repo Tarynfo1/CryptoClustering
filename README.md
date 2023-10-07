@@ -27,7 +27,7 @@
 - hvPlot
 ***
 ## Instructions
-1. Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file and create a DataFrame.
+1. Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file and create a DataFrame.<br>
     __Raw DataFrame:__
 
 
@@ -38,17 +38,18 @@
     
     <img width="366" alt="dataframe2" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/plotted_dataframe.png">
 
- 2. Use the elbow method to find the best value for k. __What is the value for k?__ The best value for k is 4.
+ 2. Use the elbow method to find the best value for k.<br><br>
+  __What is the value for k?__ The best value for k is 4.
     
     <img width="366" alt="elbow data" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/elbow_curve.png">
 
  3. Cluster Cryptocurrencies with K-means Using the Original Scaled Data
     
-    <img width="913" alt="scatter_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/predictions_scatter.png">
+    <img width="913" alt="predictions scatter chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/predictions_scatter.png">
 
   4. Optimise Clusters with Principal Component Analysis
         Use the elbow method on the PCA data to find the best value for k.
-  <img width="129" alt="demographic_info" src="">
+  <img width="129" alt="pca kmeans elbow plot" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_kmeans_elbow.png">
 
   5. Cluster Cryptocurrencies with K-means Using the PCA Data.
   
