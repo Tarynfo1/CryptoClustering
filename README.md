@@ -53,7 +53,7 @@
 
   5. Cluster Cryptocurrencies with K-means Using the PCA Data.
   
-  <img width="129" alt="demographic_info" src="">
+  <img width="129" alt="demographic_info" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_predictions_scatter.png">
 
 
   __Analysis Results__
@@ -61,7 +61,11 @@
     * You will need to modify the example gauge code to account for values ranging from 0 through 9.
     * Update the chart whenever a new sample is selected.
  
-    <img width="321" alt="gauge_chart" src="">
+Cryptocurrency by segment - KMeans <br>
+    <img width="321" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_kmeans.png"><br>
+
+Crypto Currency by segment - primary <br> <br>
+    <img width="321" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_primary_c.png"><br>
  
 
 ***
