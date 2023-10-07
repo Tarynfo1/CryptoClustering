@@ -57,15 +57,16 @@
 
 
   __Analysis Results__
-    * Adapt the Gauge Chart from [https://plot.ly/javascript/gauge-charts/](https://plotly.com/javascript/gauge-charts/) to plot the weekly washing frequency of the individual.
-    * You will need to modify the example gauge code to account for values ranging from 0 through 9.
-    * Update the chart whenever a new sample is selected.
+    **Question:** After visually analysing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?
+
+    **Answer:** As observed with the PCA features, the inertia of the clusters is significantly reduced when compared to that of the original features. The reduction in inertia indicates that the data points within each cluster exhibit much greater proximity to eachother, therby rendering them mroe easily distinguishable that those from the original data set. Furthermore, the PCA plot demonstrates a superior capacity to separate the two outliers, specifically 'theta token' and 'celsius-degree-token'.<br><br>
+    In a broader context, it becomes apparent that the clusters predominantly retain the same cryptocurrencies, despite the notable proximity of coins like 'tezos' and 'iota' to the alternate cluster. This suggests that even with a 10% data loss, the models accuracy reains remarkably robust.
  
 Cryptocurrency by segment - KMeans <br>
-    <img width="321" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_kmeans.png"><br>
+    <img width="913" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_kmeans.png"><br>
 
 Crypto Currency by segment - primary <br> <br>
-    <img width="321" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_primary_c.png"><br>
+    <img width="913" alt="gauge_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/scatter_by_crypto_primary_c.png"><br>
  
 
 ***
