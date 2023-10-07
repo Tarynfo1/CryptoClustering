@@ -35,7 +35,7 @@
 
     __Plotted DataFrame__
 
-
+    
     <img width="366" alt="dataframe2" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/plotted_dataframe.png">
 
  2. Use the elbow method to find the best value for k. __What is the value for k?__ The best value for k is 4.
@@ -44,7 +44,7 @@
 
  3. Cluster Cryptocurrencies with K-means Using the Original Scaled Data
     
-    <img width="913" alt="bubble_chart" src="">
+    <img width="913" alt="scatter_chart" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/predictions_scatter.png">
 
   4. Optimise Clusters with Principal Component Analysis
         Use the elbow method on the PCA data to find the best value for k.
