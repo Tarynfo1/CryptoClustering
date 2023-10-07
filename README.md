@@ -31,17 +31,17 @@
     __Raw DataFrame:__
 
 
-    <img width="366" alt="dataframe" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/crypto_dataframe.png">
+    <img width="913" alt="dataframe" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/crypto_dataframe.png">
 
     __Plotted DataFrame__
 
     
-    <img width="366" alt="dataframe2" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/plotted_dataframe.png">
+    <img width="913" alt="dataframe2" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/plotted_dataframe.png">
 
  2. Use the elbow method to find the best value for k.<br><br>
   __What is the value for k?__ The best value for k is 4.
     
-    <img width="366" alt="elbow data" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/elbow_curve.png">
+    <img width="913" alt="elbow data" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/elbow_curve.png">
 
  3. Cluster Cryptocurrencies with K-means Using the Original Scaled Data
     
@@ -49,11 +49,11 @@
 
   4. Optimise Clusters with Principal Component Analysis
         Use the elbow method on the PCA data to find the best value for k.
-  <img width="129" alt="pca kmeans elbow plot" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_kmeans_elbow.png">
+  <img width="913" alt="pca kmeans elbow plot" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_kmeans_elbow.png">
 
   5. Cluster Cryptocurrencies with K-means Using the PCA Data.
   
-  <img width="129" alt="demographic_info" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_predictions_scatter.png">
+  <img width="913" alt="demographic_info" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/pca_predictions_scatter.png">
 
 
   __Analysis Results__
