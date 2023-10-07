@@ -1,6 +1,6 @@
-# CryptoClustering challenge using unsupervised machine learningd
+# CryptoClustering challenge using unsupervised machine learning
 
-<img width="1440" alt="crypto_image" src="C:\Users\fordy\DA Bootcamp resources\Module_20_assignment\CryptoClustering\Resources\Images\cryptocluster.png">
+<img width="1440" alt="crypto_image" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/cryptocluster.png">
 
 ## Description
 * A projec to create profitable crypto portfolio recommendations through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
