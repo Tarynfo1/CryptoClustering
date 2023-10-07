@@ -3,7 +3,7 @@
 <img width="1440" alt="crypto_image" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/cryptocluster.png">
 
 ## Description
-* A project to create profitable crypto-portfolio recommendations, through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
+A project to create profitable crypto-portfolio recommendations, through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
  
 
 
@@ -57,9 +57,8 @@
 
 
   __Analysis Results__
-    **Question:** After visually analysing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?
-
-    **Answer:** As observed with the PCA features, the inertia of the clusters is significantly reduced when compared to that of the original features. The reduction in inertia indicates that the data points within each cluster exhibit much greater proximity to eachother, therby rendering them mroe easily distinguishable that those from the original data set. Furthermore, the PCA plot demonstrates a superior capacity to separate the two outliers, specifically 'theta token' and 'celsius-degree-token'.<br><br>
+    **Question:** After visually analysing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?<br><br>
+    As observed with the PCA features, the inertia of the clusters is significantly reduced when compared to that of the original features. The reduction in inertia indicates that the data points within each cluster exhibit much greater proximity to eachother, therby rendering them mroe easily distinguishable that those from the original data set. Furthermore, the PCA plot demonstrates a superior capacity to separate the two outliers, specifically 'theta token' and 'celsius-degree-token'.<br><br>
     In a broader context, it becomes apparent that the clusters predominantly retain the same cryptocurrencies, despite the notable proximity of coins like 'tezos' and 'iota' to the alternate cluster. This suggests that even with a 10% data loss, the models accuracy reains remarkably robust.
  
 Cryptocurrency by segment - KMeans <br>
