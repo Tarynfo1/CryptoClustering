@@ -3,8 +3,8 @@
 <img width="1440" alt="crypto_image" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/cryptocluster.png">
 
 ## Description
-* A projec to create profitable crypto portfolio recommendations through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
-https://Tarynfo1.github.io/belly-button-challenge 
+* A project to create profitable crypto-portfolio recommendations, through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
+ 
 
 
 *** 
