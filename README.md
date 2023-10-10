@@ -3,7 +3,7 @@
 <img width="1440" alt="crypto_image" src="https://github.com/Tarynfo1/CryptoClustering/blob/main/Resources/Images/cryptocluster.png">
 
 ## Description
-A project to create profitable crypto-portfolio recommendations, through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
+* A project to create profitable crypto-portfolio recommendations, through the use of unsupervised machine learning and prediction throught the use of K-Means clustering.
  
 
 
@@ -57,8 +57,7 @@ A project to create profitable crypto-portfolio recommendations, through the use
 
 
   __Analysis Results__
-    **Question:** After visually analysing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?<br><br>
-    As observed with the PCA features, the inertia of the clusters is significantly reduced when compared to that of the original features. The reduction in inertia indicates that the data points within each cluster exhibit much greater proximity to eachother, therby rendering them mroe easily distinguishable that those from the original data set. Furthermore, the PCA plot demonstrates a superior capacity to separate the two outliers, specifically 'theta token' and 'celsius-degree-token'.<br><br>
+    **Question:** After visually analysing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?<br><br>As observed with the PCA features, the inertia of the clusters is significantly reduced when compared to that of the original features. The reduction in inertia indicates that the data points within each cluster exhibit much greater proximity to eachother, therby rendering them mroe easily distinguishable that those from the original data set. Furthermore, the PCA plot demonstrates a superior capacity to separate the two outliers, specifically 'theta token' and 'celsius-degree-token'.<br><br>
     In a broader context, it becomes apparent that the clusters predominantly retain the same cryptocurrencies, despite the notable proximity of coins like 'tezos' and 'iota' to the alternate cluster. This suggests that even with a 10% data loss, the models accuracy reains remarkably robust.
  
 Cryptocurrency by segment - KMeans <br>
@@ -70,42 +69,36 @@ Crypto Currency by segment - primary <br> <br>
 
 ***
 ## Acknowledgements
-- https://plotly.com/python/reference/indicator/#indicator-gauge-axis-dtick assisted in the following code snippet
+- https://stackoverflow.com/questions/59678780/show-extra-columns-when-hovering-in-a-scatter-plot-with-hvplot assisted in the following code snippet
 ```
-          gauge: {
-              axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2}, 
-              bar: {color: "rgba(14, 127, 0, .5)"},
+          # Create a scatter plot using hvPlot by setting 
+# `x="price_change_percentage_24h"` and `y="price_change_percentage_7d"`. 
+# Colour the graph points with the labels found using K-Means and 
+# add the crypto name in the `hover_cols` parameter to identify 
+# the cryptocurrency represented by each data point.
+
+predictions_scatter = market_data_predictions.hvplot.scatter(
+title='Scatter Plot by Crypto Currency Segment - k=4',
+x='price_change_percentage_24h',
+y='price_change_percentage_7d',
+by='CryptoCluster',
+hover_cols=['coin_id'],
+frame_width=700,
+frame_height=500
+)
+
+predictions_scatter
+```
+ 
+
+- Reference https://vitalflux.com/pca-explained-variance-concept-python-example/ assisted in the following code snippet
+```
+# Retrieve the explained variance to determine how much information 
+# can be attributed to each principal component.
+variance = pca.explained_variance_ratio_
+
+print(f'PC1 holds {variance[0]:.2f}%, PC2 holds {variance[1]:.2f}%, with PC3 holding {variance[2]: .2f}%. The primary components hold a total of {sum(variance) * 100: .2f}% of the original data')
+
 ```
 
-- Reference from https://www.d3indepth.com/requests/ assisted in the following code snippet
-```
-// // Fetch the JSON data and console log it
-d3.json(url).then(function(data){
-    console.log(data);
-});
-```  
 
-- Reference https://plotly.com/python/v3/gauge-charts/ assisted in the following code snippet
-```
-// Assign the first object to obj variable
-      let obj = filteredData[0]
-      console.log(obj)
-      // Trace for the data for the gauge chart
-      let trace = [{
-          domain: { x: [0, 1], y: [0, 1] },
-          value: obj.wfreq,
-          title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week", font: {size: 24}},
-          type: "indicator", 
-          mode: "gauge+number",
-          gauge: {
-              axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2}, 
-              bar: {color: "rgba(14, 127, 0, .5)"},
-              steps: [
-```
-
-- Reference from AskBCS Learning assistant Mohamed Metwali assisted with the following code snippet
-```
-' // Filter data where id = selected value after converting their types 
-' // (bc meta.id is in integer format and selectValue from is in string format)
-' let filteredData = metadata.filter((meta) => meta.id == selectedId.id);
-```
